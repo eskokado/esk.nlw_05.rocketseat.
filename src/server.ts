@@ -8,4 +8,10 @@ app.get("/", (req, res) => {
   });
 });
 
+app.post("/", (req, res) => {
+  return res.json({
+    message: "Usuário salvo com sucesso!",
+  });
+});
+
 app.listen(3333, () => console.log("Server is running on port 3333"));
