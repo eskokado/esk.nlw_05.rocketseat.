@@ -2,7 +2,7 @@
 import { SettingsService } from "../services/SettingsService";
 
 class SettingsController {
-  async create(req: Request, res: Response) {
+  async create(req: Request, res: Response): Promise<Response> {
     const { chat, username } = req.body;
 
     const settingsService = new SettingsService();
